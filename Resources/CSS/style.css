@@ -20,6 +20,7 @@
         
         html {
             font-size: 16px;
+            font-family: "Roboto";
         }
         
         body {
@@ -68,19 +69,139 @@
         
         .contentlearn {
             display: flex;
-            align-items: center;
+            background-color: grey;
             justify-content: center;
             align-content: center;
-            background-color: grey;
+            align-items: center;
+            flex-direction: column;
             padding-top: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
             padding-left: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
             padding-right: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
             padding-bottom: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
             min-height: 1rem;
             width: 100%;
+            gap: 1rem;
         }
         
         .contentlearn img {
             max-width: 100%;
             height: auto;
         }
+        
+        #starthere {
+            display: flex;
+            min-width: 8rem;
+            max-width: 30rem;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgray;
+        }
+        /* Here Starts it doesn´t hurt to keep practicing */
+        
+        .contentcontainerpracticing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            padding-top: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
+            padding-left: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
+            padding-right: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
+            padding-bottom: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
+        }
+        
+        .contentpracticingmen {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            min-height: 1rem;
+        }
+        
+        .contentpracticingmen h3 {
+            font-size: clamp(0.8rem, 0.4rem + 2.5vw, 2.0rem)
+        }
+        
+        .contentpracticingmen p {
+            font-size: clamp(0.5rem, 0.4rem + 2.5vw, 1.5rem)
+        }
+        
+        .contentpracticingmen img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .contentpracticingdate {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            min-height: 1rem;
+            height: auto;
+        }
+        
+        .contentpracticingdatebox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .contentpracticingdateboximg {
+            width: 30%;
+        }
+        
+        @media only screen and (max-width: 650px) {
+            .contentpracticingdateboximg {}
+            .contentcontainerpracticing {
+                flex-wrap: wrap;
+            }
+            #bluetext {
+                display: none;
+            }
+        }
+        
+        .contentpracticingdateboximg img {
+            height: auto;
+            width: 100%;
+            padding: 1rem;
+        }
+        
+        .contentpracticingdateboxtext {
+            display: flex;
+            width: 70%;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: flex-start;
+        }
+        
+        .contentpracticingdateboxtext h3 {
+            font-size: clamp(0.8rem, 0.4rem + 2.5vw, 2.0rem)
+        }
+        
+        .contentpracticingdateboxtext p {
+            font-size: clamp(0.3rem, 0.4rem + 2.5vw, 1.5rem)
+        }
+        
+        #bluetext {
+            color: aqua;
+            font-size: clamp(0.3rem, 0.4rem + 2.5vw, 1.0rem)
+        }
+        
+        @media only screen and (max-width: 600px) {}
+        
+        .contentpracticingdateboxgrey {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: lightgrey;
+        }
+        
+        .contentpracticingdateboxgrey img {}
+        
+        .contentpracticingdatebox img {}
