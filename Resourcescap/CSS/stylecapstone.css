@@ -205,3 +205,66 @@
         .contentpracticingdateboxgrey img {}
         
         .contentpracticingdatebox img {}
+        /* Here Ends it doesn´t hurt to keep practicing */
+        /* Here Starts "Start learning" */
+        
+        #aaa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: lightgrey;
+        }
+        
+        .grid-container {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .grid-item {
+            align-self: center;
+            justify-self: center;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+        }
+        
+        .grid-itemone {
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .grid-item h3 {
+            text-align: center;
+        }
+        
+        .grid-item p {
+            text-align: center;
+        }
+        
+        .grid-item-1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 0.1rem;
+            }
+            .grid-item-1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
