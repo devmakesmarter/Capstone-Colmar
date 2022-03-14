@@ -268,3 +268,103 @@
                 grid-column-end: 1;
             }
         }
+        /*
+        #sectionthree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        */
+        
+        .contentcontainergrid {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr 1fr 1fr 1fr;
+            grid-template-areas: "one one one one" "two two three four" "two two five six";
+            gap: 0.5rem;
+        }
+        
+        .one {
+            grid-area: one;
+        }
+        
+        .one h2 {
+            text-align: center;
+        }
+        
+        .two {
+            grid-area: two;
+        }
+        
+        .two h3 {
+            text-align: center;
+        }
+        
+        .two p {
+            text-align: center;
+        }
+        
+        .three {
+            grid-area: three;
+            padding: 3rem;
+        }
+        
+        .four {
+            grid-area: four;
+            align-self: center;
+            justify-self: start;
+        }
+        
+        .five {
+            grid-area: five;
+            padding: 3rem;
+        }
+        
+        .six {
+            grid-area: six;
+            align-self: center;
+            justify-self: start;
+        }
+        
+        .contentcontainergrid video {
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
+        
+        .contentcontainergrid img {
+            width: 100%;
+            padding: 1rem;
+            border: 1rem solid white;
+            border-radius: 1rem;
+            height: auto;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .contentcontainergrid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 0.1rem;
+                grid-template-areas: "one" "two" "three" "four" "five" "six";
+            }
+            .three {
+                grid-area: three;
+                padding: 0;
+            }
+            .four {
+                grid-area: four;
+                align-self: center;
+                justify-self: center;
+            }
+            .five {
+                grid-area: five;
+                padding: 0;
+            }
+            .six {
+                grid-area: six;
+                align-self: center;
+                justify-self: center;
+            }
+        }
